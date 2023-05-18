@@ -13,7 +13,7 @@ for SERVER in ${SERVERS[@]}; do
     echo -e "\n"
     hostname
     date
-    nginx -t
+    nginx -t && nginx -s reload
     echo -e "\n"
 EOF
 done
