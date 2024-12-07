@@ -136,3 +136,6 @@ Yes. I offer paid support and can implement it on your server. Minimum fee is US
 Please ping me on [Twitter](https://twitter.com/pothi]) or [send me a message](https://www.tinywp.in/contact/).
 
 If you find this repo useful, please spread the word! Suggestions, discussion on best practices, bug reports, future requests, forks are always welcome!
+
+
+ln -s /etc/nginx/sites-available/default.conf /etc/nginx/sites-enabled/

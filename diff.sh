@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 # set -o xtrace
-SERVERS=$(cat /Users/hiepns/cs/servers.txt)
-path=$1
-for SERVER in ${SERVERS[@]}; do
-    echo -e "\n------------------ DIFF ${SERVER} ------------------\n"
-    ssh root@${SERVER} "cat /etc/nginx/${path}" | diff - ./${path}
-done
+server=$1
+path=$2
+ssh root@${server} "cat /etc/nginx/${path}" | diff - ./${path}
 
 
 
